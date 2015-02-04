@@ -157,3 +157,27 @@ header nav ul li span {
   width: 260px;
   margin: 0 auto;
 }
+
+@media screen and (min-width: 320px) and (max-width: 649px) {
+  /* line 4, ../sass/_media.scss */
+  .main-content .month {
+    width: 100%;
+  }
+
+  /* line 7, ../sass/_media.scss */
+  header img {
+    width: 300px;
+  }
+}
+@media screen and (min-width: 900px) and (max-width: 1024px) {
+  /* line 15, ../sass/_media.scss */
+  .main-content .month {
+    width: 32.33%;
+  }
+}
+@media screen and (min-width: 650px) and (max-width: 899px) {
+  /* line 23, ../sass/_media.scss */
+  .main-content .month {
+    width: 42.33%;
+  }
+}

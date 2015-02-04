@@ -1,0 +1,27 @@
+@media screen 
+and (min-width : 320px)
+and (max-width : 649px){
+    .main-content .month{
+        width: 100%;
+    }
+    header img{
+        width: 300px;
+    }
+}
+
+@media screen
+and (min-width : 900px) 
+and (max-width : 1024px){
+    .main-content .month{
+        width: 32.33%;
+    }
+}
+
+@media screen
+and (min-width : 650px) 
+and (max-width : 899px){
+    .main-content .month{
+        width: 42.33%;
+    }
+}
+
