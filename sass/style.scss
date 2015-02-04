@@ -1,2 +1,89 @@
 @import "compass/reset";
 @import "compass/css3";
+
+.canvas{
+    max-width: 1024px;
+    margin: 0 auto;
+    text-align: center;
+}
+.clearfix{
+    &:after {
+      content:"";
+      display:table;
+      clear:both;
+    }
+}
+
+$red: #E11132;
+$black: #030303;
+
+body{
+    background-color: #EEEEE8;
+}
+header{
+    img{
+        margin: 20px auto;
+    }
+    h1{
+        width: 90px;
+        padding: 10px;
+        margin: 20px auto;
+        color: $red;
+        border-top: 1px solid $red;
+        border-bottom: 1px solid $red;
+        font-size: 20px;
+    }
+    nav{
+        ul{
+            width: 220px;
+            margin: 0 auto;
+            li{
+                float: left;
+                padding: 10px;
+                width: 38%;
+                margin-left: 6px;
+                div{
+                    width: 34px;
+                    height: 34px;
+                    border-radius: 17px;
+                    color: white;
+                    float: left;
+                    icon{
+                        display: inline-block;
+                        margin-top: 7px;
+                    }
+                    &.holiday{
+                        background-color: $red;
+                    }
+                    &.work{
+                        background-color: $black;
+                    }
+                }
+                span{
+                    display: inline-block;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}
+
+.main-content{
+    margin: 40px auto;
+    .month{
+        display: inline-block;
+        width: 32.33%;
+        margin: 20px auto;
+
+        .big{
+            width: 280px;
+            margin-top: 5px;
+        }
+        .calender{
+            padding: 10px;
+            background-color: white;
+            width: 260px;
+            margin: 0 auto;
+        }
+    }
+}
