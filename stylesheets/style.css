@@ -83,10 +83,32 @@ body {
 }
 
 /* line 24, ../sass/style.scss */
+header.fix-tips {
+  z-index: 100;
+}
+/* line 26, ../sass/style.scss */
+header.fix-tips .tips {
+  background-color: #ddd;
+}
+/* line 29, ../sass/style.scss */
+header.fix-tips nav {
+  position: fixed;
+  top: 10px;
+  left: 43%;
+}
+/* line 35, ../sass/style.scss */
+header .tips {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 100%;
+}
+/* line 42, ../sass/style.scss */
 header img {
   margin: 20px auto;
 }
-/* line 27, ../sass/style.scss */
+/* line 45, ../sass/style.scss */
 header h1 {
   width: 90px;
   padding: 10px;
@@ -96,68 +118,97 @@ header h1 {
   border-bottom: 1px solid #E11132;
   font-size: 20px;
 }
-/* line 37, ../sass/style.scss */
+/* line 55, ../sass/style.scss */
 header nav ul {
   width: 220px;
   margin: 0 auto;
 }
-/* line 40, ../sass/style.scss */
+/* line 58, ../sass/style.scss */
 header nav ul li {
   float: left;
   padding: 10px;
   width: 38%;
   margin-left: 6px;
 }
-/* line 45, ../sass/style.scss */
+/* line 63, ../sass/style.scss */
 header nav ul li div {
   width: 34px;
   height: 34px;
   border-radius: 17px;
   color: white;
   float: left;
+  transition: all 0.5s;
 }
-/* line 51, ../sass/style.scss */
+/* line 70, ../sass/style.scss */
 header nav ul li div icon {
   display: inline-block;
   margin-top: 7px;
 }
-/* line 55, ../sass/style.scss */
+/* line 74, ../sass/style.scss */
 header nav ul li div.holiday {
   background-color: #E11132;
 }
-/* line 58, ../sass/style.scss */
+/* line 77, ../sass/style.scss */
 header nav ul li div.work {
   background-color: #030303;
 }
-/* line 62, ../sass/style.scss */
+/* line 80, ../sass/style.scss */
+header nav ul li div:hover {
+  width: 36px;
+  height: 36px;
+  border-radius: 18px;
+  cursor: pointer;
+}
+/* line 85, ../sass/style.scss */
+header nav ul li div:hover icon {
+  margin-top: 8px;
+}
+/* line 90, ../sass/style.scss */
 header nav ul li span {
   display: inline-block;
   margin-top: 10px;
 }
 
-/* line 71, ../sass/style.scss */
+/* line 99, ../sass/style.scss */
 .main-content {
   margin: 40px auto;
 }
-/* line 73, ../sass/style.scss */
+/* line 101, ../sass/style.scss */
 .main-content .month {
   display: inline-block;
   width: 32.33%;
   margin: 20px auto;
 }
-/* line 78, ../sass/style.scss */
+/* line 105, ../sass/style.scss */
 .main-content .month .big {
   width: 280px;
   margin-top: 5px;
 }
-/* line 82, ../sass/style.scss */
+/* line 109, ../sass/style.scss */
 .main-content .month .calender {
   padding: 10px;
   background-color: white;
   width: 260px;
-  margin: 0 auto;
+  margin: -4px auto 0;
+  transition: all 2s;
 }
-
+/* line 115, ../sass/style.scss */
+.main-content .month .calender img {
+  transition: all 2s;
+}
+/* line 118, ../sass/style.scss */
+.main-content .month .calender:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+@-webkit-keyframes img {
+  50% {
+    transform: translate(0, -20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 @media screen and (min-width: 320px) and (max-width: 649px) {
   /* line 4, ../sass/_media.scss */
   .main-content .month {
@@ -168,16 +219,26 @@ header nav ul li span {
   header img {
     width: 300px;
   }
+
+  /* line 10, ../sass/_media.scss */
+  header.fix-tips nav {
+    left: 24%;
+  }
 }
 @media screen and (min-width: 900px) and (max-width: 1024px) {
-  /* line 15, ../sass/_media.scss */
+  /* line 18, ../sass/_media.scss */
   .main-content .month {
     width: 32.33%;
   }
 }
 @media screen and (min-width: 650px) and (max-width: 899px) {
-  /* line 23, ../sass/_media.scss */
+  /* line 26, ../sass/_media.scss */
   .main-content .month {
     width: 42.33%;
+  }
+
+  /* line 29, ../sass/_media.scss */
+  header.fix-tips nav {
+    left: 38%;
   }
 }
