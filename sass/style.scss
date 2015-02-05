@@ -19,18 +19,26 @@ $black: #030303;
 
 body{
     background-color: #EEEEE8;
+    color: #888;
     font-family: 'Hiragino Sans GB','Microsoft YaHei',arial,sans-serif;
 }
 header{
     &.fix-tips{
         z-index: 100;
         .tips{
-            background-color: #ddd;
+            background-color: #EEEEE8;
+            box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+            -webkit-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
+            -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.1);
         }
         nav{
             position: fixed;
             top: 10px;
-            left: 43%;
+            left: 50%;
+            margin-left: -110px;
+            icon{
+                font-size: 12px;
+            }
         }
     }
     .tips{
@@ -48,8 +56,8 @@ header{
         padding: 10px;
         margin: 20px auto;
         color: $red;
-        border-top: 1px solid $red;
-        border-bottom: 1px solid $red;
+        border-top: 2px solid $red;
+        border-bottom: 2px solid $red;
         font-size: 20px;
     }
     nav{
@@ -104,12 +112,16 @@ header{
         width: 32.33%;
         margin: 20px auto;
         vertical-align: top;
+        text-align: left;
+        label{
+            font-size: 20px;
+        }
         .container{
             width: 280px;
-            margin: 0 auto;
-            -webkit-box-shadow: 8px 10px 6px -6px #777;
-            -moz-box-shadow: 8px 10px 6px -6px #777;
-            box-shadow: 8px 10px 6px -6px #777;
+            margin: 10px auto;
+            -webkit-box-shadow: 0px 1px 3px -2px #777;
+            -moz-box-shadow: 0px 1px 3px -2px #777;
+            box-shadow: 0px 1px 3px -2px #777;
         }
         .big{
             width: 280px;
@@ -120,27 +132,15 @@ header{
             background-color: white;
             width: 260px;
             margin: -4px auto 0;
-            transition: all 2s;
             img{
-                transition: all 2s;
                 width: 260px;
-            }
-            &:hover{
-                cursor: pointer;
-                background-color: #ccc;
-                @-webkit-keyframes img{
-                    50%{
-                        transform: translate(0,-80px);
-                    }
-                    100%{
-                        transform: translate(0,0);
-                    }
-                }
             }
             .suggestion{
                 padding: 15px 5px;
                 border-top: 1px solid #ccc;
                 text-align: left;
+                font-size: 14px;
+                line-height: 20px;
             }
         }
     }

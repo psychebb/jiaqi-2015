@@ -7,8 +7,11 @@ and (max-width : 649px){
     header img{
         width: 300px;
     }
+    header.fix-tips .tips{
+        height: 54px;
+    }
     header.fix-tips nav{
-        left: 24%;
+        top: 0;
     }
 }
 
@@ -25,9 +28,6 @@ and (min-width : 650px)
 and (max-width : 899px){
     .main-content .month{
         width: 42.33%;
-    }
-    header.fix-tips nav{
-        left: 38%;
     }
 }
 
