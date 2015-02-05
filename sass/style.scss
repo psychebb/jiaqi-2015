@@ -104,6 +104,13 @@ header{
         width: 32.33%;
         margin: 20px auto;
         vertical-align: top;
+        .container{
+            width: 280px;
+            margin: 0 auto;
+            -webkit-box-shadow: 8px 10px 6px -6px #777;
+            -moz-box-shadow: 8px 10px 6px -6px #777;
+            box-shadow: 8px 10px 6px -6px #777;
+        }
         .big{
             width: 280px;
             margin-top: 5px;
@@ -123,15 +130,23 @@ header{
                 background-color: #ccc;
                 @-webkit-keyframes img{
                     50%{
-                        transform: translate(0,-20px);
+                        transform: translate(0,-80px);
                     }
                     100%{
                         transform: translate(0,0);
                     }
                 }
             }
+            .suggestion{
+                padding: 15px 5px;
+                border-top: 1px solid #ccc;
+                text-align: left;
+            }
         }
     }
 }
 
+footer.canvas{
+    margin: 20px auto;
+}
 @import "media";

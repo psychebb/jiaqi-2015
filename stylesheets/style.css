@@ -182,11 +182,19 @@ header nav ul li span {
   vertical-align: top;
 }
 /* line 107, ../sass/style.scss */
+.main-content .month .container {
+  width: 280px;
+  margin: 0 auto;
+  -webkit-box-shadow: 8px 10px 6px -6px #777;
+  -moz-box-shadow: 8px 10px 6px -6px #777;
+  box-shadow: 8px 10px 6px -6px #777;
+}
+/* line 114, ../sass/style.scss */
 .main-content .month .big {
   width: 280px;
   margin-top: 5px;
 }
-/* line 111, ../sass/style.scss */
+/* line 118, ../sass/style.scss */
 .main-content .month .calender {
   padding: 10px;
   background-color: white;
@@ -194,24 +202,36 @@ header nav ul li span {
   margin: -4px auto 0;
   transition: all 2s;
 }
-/* line 117, ../sass/style.scss */
+/* line 124, ../sass/style.scss */
 .main-content .month .calender img {
   transition: all 2s;
   width: 260px;
 }
-/* line 121, ../sass/style.scss */
+/* line 128, ../sass/style.scss */
 .main-content .month .calender:hover {
   cursor: pointer;
   background-color: #ccc;
 }
 @-webkit-keyframes img {
   50% {
-    transform: translate(0, -20px);
+    transform: translate(0, -80px);
   }
   100% {
     transform: translate(0, 0);
   }
 }
+/* line 140, ../sass/style.scss */
+.main-content .month .calender .suggestion {
+  padding: 15px 5px;
+  border-top: 1px solid #ccc;
+  text-align: left;
+}
+
+/* line 149, ../sass/style.scss */
+footer.canvas {
+  margin: 20px auto;
+}
+
 @media screen and (min-width: 320px) and (max-width: 649px) {
   /* line 4, ../sass/_media.scss */
   .main-content .month {
