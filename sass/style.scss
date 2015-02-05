@@ -19,6 +19,7 @@ $black: #030303;
 
 body{
     background-color: #EEEEE8;
+    font-family: 'Hiragino Sans GB','Microsoft YaHei',arial,sans-serif;
 }
 header{
     &.fix-tips{
@@ -102,6 +103,7 @@ header{
         display: inline-block;
         width: 32.33%;
         margin: 20px auto;
+        vertical-align: top;
         .big{
             width: 280px;
             margin-top: 5px;
@@ -113,7 +115,8 @@ header{
             margin: -4px auto 0;
             transition: all 2s;
             img{
-                transition: all 2s;  
+                transition: all 2s;
+                width: 260px;
             }
             &:hover{
                 cursor: pointer;
